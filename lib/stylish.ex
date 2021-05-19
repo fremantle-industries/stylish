@@ -1,5 +1,5 @@
 defmodule Stylish do
   @moduledoc """
-  Documentation for `Stylish`.
+  Phoenix view helpers for HTML components styled with tailwindcss
   """
 end
