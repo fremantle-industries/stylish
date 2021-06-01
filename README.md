@@ -10,7 +10,9 @@ Add the `stylish` package to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:stylish, "~> 0.0.1"}]
+  [
+    {:stylish, "~> 0.0.2"}
+  ]
 end
 ```
 
