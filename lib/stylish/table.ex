@@ -1,7 +1,7 @@
 defmodule Stylish.Table do
   use Phoenix.HTML
 
-  def render("navigation.html", assigns) do
+  def navigation(assigns) do
     to = assigns[:to]
     conn = assigns[:conn]
     first_page = 1
@@ -41,5 +41,10 @@ defmodule Stylish.Table do
       <% end %>
     </div>
     """
+  end
+
+  @deprecated "Use Stylish.Table.navigation/1 instead."
+  def render("navigation.html", assigns) do
+    Stylish.Table.navigation(assigns)
   end
 end
