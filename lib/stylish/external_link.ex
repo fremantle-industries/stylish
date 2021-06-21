@@ -9,6 +9,6 @@ defmodule Stylish.ExternalLink do
     </svg>
     """
 
-    link(icon, to: assigns[:to])
+    link(icon, to: assigns[:to], class: assigns[:class])
   end
 end
