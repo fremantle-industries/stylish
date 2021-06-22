@@ -4,7 +4,7 @@ defmodule Stylish.MixProject do
   def project do
     [
       app: :stylish,
-      version: "0.0.4",
+      version: "0.0.5",
       elixir: "~> 1.10",
       package: package(),
       start_permanent: Mix.env() == :prod,
