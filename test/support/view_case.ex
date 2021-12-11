@@ -5,6 +5,7 @@ defmodule Stylish.ViewCase do
   def render(module, template, assigns) do
     module
     |> apply(:render, [template, assigns])
+    |> html_escape()
     |> safe_to_string()
   end
 

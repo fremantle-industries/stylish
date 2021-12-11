@@ -1,5 +1,6 @@
 defmodule Stylish.Table do
   use Phoenix.HTML
+  import Phoenix.LiveView.Helpers, only: [sigil_H: 2]
 
   def navigation(assigns) do
     to = assigns[:to]
@@ -16,7 +17,7 @@ defmodule Stylish.Table do
     to_next_page = to.(conn, next_page)
     to_last_page = to.(conn, last_page)
 
-    ~E"""
+    ~H"""
     <div>
       <%= if first_page < current_page do %>
         <%= link "<<", to: to_first_page, class: "border px-4 py-2 bg-gray-100 opacity-70 hover:opacity-50" %>
