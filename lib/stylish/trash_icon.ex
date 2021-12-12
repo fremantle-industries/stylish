@@ -1,6 +1,5 @@
 defmodule Stylish.TrashIcon do
-  use Phoenix.HTML
-  import Phoenix.LiveView.Helpers, only: [sigil_H: 2]
+  use Phoenix.Component
 
   def trash_icon(assigns \\ %{}) do
     ~H"""

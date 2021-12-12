@@ -1,6 +1,6 @@
 defmodule Stylish.Table do
+  use Phoenix.Component
   use Phoenix.HTML
-  import Phoenix.LiveView.Helpers, only: [sigil_H: 2]
 
   def navigation(assigns) do
     to = assigns[:to]

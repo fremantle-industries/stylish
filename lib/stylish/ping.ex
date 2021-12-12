@@ -1,6 +1,6 @@
 defmodule Stylish.Ping do
+  use Phoenix.Component
   use Phoenix.HTML
-  import Phoenix.LiveView.Helpers, only: [sigil_H: 2]
 
   def ping(assigns) do
     animate_color_class = assigns[:animate_color_class] || "bg-blue-400"

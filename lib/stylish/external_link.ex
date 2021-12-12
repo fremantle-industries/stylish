@@ -1,6 +1,6 @@
 defmodule Stylish.ExternalLink do
+  use Phoenix.Component
   use Phoenix.HTML
-  import Phoenix.LiveView.Helpers, only: [sigil_H: 2]
 
   def external_link(assigns) do
     icon = ~H"""
