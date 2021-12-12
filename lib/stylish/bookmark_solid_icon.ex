@@ -1,11 +1,8 @@
 defmodule Stylish.BookmarkSolidIcon do
   use Phoenix.Component
 
+  @deprecated "Use Stylish.Icons.bookmark_solid/1 instead."
   def bookmark_solid_icon(assigns \\ %{}) do
-    ~H"""
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" phx-update="ignore">
-      <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-    </svg>
-    """
+    Stylish.Icons.bookmark_solid(assigns)
   end
 end
