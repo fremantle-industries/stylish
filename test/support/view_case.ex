@@ -14,6 +14,7 @@ defmodule Stylish.ViewCase do
       use AssertHTML
 
       import Stylish.ViewCase
+      import Phoenix.LiveViewTest
     end
   end
 end
