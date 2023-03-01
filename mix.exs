@@ -24,7 +24,7 @@ defmodule Stylish.MixProject do
   defp deps do
     [
       {:phoenix_html, "~> 3.0"},
-      {:phoenix_live_view, "~> 0.17.0"},
+      {:phoenix_live_view, "~> 0.18.16"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
